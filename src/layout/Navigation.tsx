@@ -23,4 +23,7 @@ const Container = styled.ul`
   margin: auto;
   padding: 0;
   overflow: auto;
+  box-sizing: border-box;
 `;
+
+// Selected -> border-bottom: 5px solid #E91E63
