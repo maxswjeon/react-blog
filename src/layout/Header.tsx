@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
+import Navigation from "./Navigation";
 
 export default class Header extends Component {
     render(): React.ReactElement {
@@ -8,6 +9,7 @@ export default class Header extends Component {
                 <Container>
                     <Title>코딩하는 곰의 공부일지</Title>
                 </Container>
+                <Navigation/>
             </Background>
         );
     }
@@ -17,6 +19,7 @@ const Background = styled.div`
   width: 100%;
   background-color: #1B1F24;
   overflow: auto;
+  padding-bottom: 50px;
 `;
 
 const Container = styled.div`
