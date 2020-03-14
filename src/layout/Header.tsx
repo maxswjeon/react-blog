@@ -7,7 +7,7 @@ export default class Header extends Component {
         return (
             <Background>
                 <Container>
-                    <Title>코딩하는 곰의 공부일지</Title>
+                    <Title href={"/"}>코딩하는 곰의 공부일지</Title>
                 </Container>
                 <Navigation/>
             </Background>
@@ -29,10 +29,17 @@ const Container = styled.div`
   overflow: auto;
 `;
 
-const Title = styled.h1`
+const Title = styled.a`
   font-family: 'Noto Sans KR', sans-serif;
   font-weight: bold;
   float: left;
   color: white;
-  margin: 75px 0 25px 0;
+  padding: 75px 0 25px 0;
+  display: block;
+  text-decoration: none;
+  font-size: 2em;
+  
+  @media (max-width: 968px) {
+    padding-left: 25px;
+  }
 `;
